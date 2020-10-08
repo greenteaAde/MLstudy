@@ -53,5 +53,34 @@ KLD 값은 예측한 확률이 실제 값과 같아질수록 0에 가까워진�
 를 최소화하는 것이다. 본래 entropy를 구하려면 *logS* 대신 *logL*을 넣어주어야 하나, 모형의 최적화를 위해 *S*를 넣어주기 때문에 cross entropy라고 부른다.
 
 <br/>
-## Random Forest
 
+## 2. Ensemble Method
+
+<br/>
+<p align="center"><img src="https://cdn.corporatefinanceinstitute.com/assets/bagging.png"></p>
+<br/>
+
+&nbsp; 동일 학습 알고리즘을 사용한 복수의 예측 모형을 결합하는 방법.
+Bagging과 Boosting이 있다.
+
+- 단일 모형보다 분산이 감소하여 overfitting을 방지한다.
+- 개별 모형의 성능이 좋지 않더라도 결합하여 성능 향상이 가능하다.
+<br/>
+
+### 2.1. Bagging
+
+- 생성한 bootstrap을 모델링 한 후 병렬로 집계하여 최종의 예측 모형을 산출
+- **bootstrap**: Random Sampling을 통해 원자료로부터 만든 크기가 동일한 여러 개의 표본 자료.
+- Categorical data는 Voting, Continuous data는 평균으로 집계
+- Bias가 작고 Variance가 큰 모형(overfitting된 모형)에 사용
+<br/>
+
+### 2.2. Boosting
+- 
+
+## 2. Random Forest
+
+
+
+
+## 2.2. Random Forest
